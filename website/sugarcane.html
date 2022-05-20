@@ -8,6 +8,55 @@
 	<script type="text/javascript" src="java.js"></script>
 </head>
 <body>
+	<div class="topnav" id="myTopnav">
+		 <div class="nav-title">
+                <img src="image/logo.png" id="nav-img">
+ </div>
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">CROPS
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Maize.html">MAIZE</a>
+      <a href="#">RICE</a>
+      <a href="sugarcane.html">SUGARCANE</a>
+      <a href="#">COTTON</a>
+      <a href="#">MUSTERD</a>
+      <a href="#">WHEAT</a>
+
+    </div>
+  </div>
+   <div class="dropdown">
+    <button class="dropbtn">QUESTIONS
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+    <a href="#intro"> INTRODUCTION</a><br>
+    <a href=" #cult"> CULTIVATION</a><br>
+    <a href=" #var"> VARIETIES</a><br>
+    <a href="#time"> SOWING TIME</a><br>
+    <a href="#soil"> SOIL</a><br>
+    <a href="#bed">SEED BED PREPARATION</a><br>
+    <a href="#rate">SEED RATE</a><br>
+    <a href="#methods"> SOWING METHODS</a><br>
+    <a href=" #fert"> FERTILIZERS</a><br>
+    <a href="#water"> WATERING</a><br>
+    <a href="#pest"> PESTS OF MAIZE AND HOW THESE CAN BE CONTROLLED</a><br>
+    <a href="#disease"> DISEASES OF MAIZE AND HOW THESE CAN BE CONTROLLED</a><br>
+    <a href="#weeds"> IMPORTANT WEEDS OF MAIZE AND HOW THESE CAN BE CONTROLLED</a><br>
+    <a href="#harvest"> HARVESTING</a><br>
+    <a href="#shell">SHELLING</a><br>
+    <a href="#yield"> YIELD</a><br>
+    <a href=" #store"> STORAGE</a><br>
+
+    </div>
+  </div>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
 <h1>SUGARCANE</h1>
 <img src="image/sugarcane.jpeg" id="frontimg" alt="not found">
 <div id="anchor">
@@ -63,7 +112,7 @@ November-December &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp 25-30 days</p>
 All phosphorus and potash and one fourth N should be applied at the time of planting. It is preferable that P and K may be applied in furrows where seed setts are to be placed. Rest of the nitrogenous fertilizer may be applied in three equal splits i.e. during April, May and by mid June to February-March planted crop</p>
 <img src="image/fertcane.jpg" id="img" alt="not found">
 <h2 id="pest"> Pest control</h2>
-<p>sect pests play an important role in reducing the sugarcane yield. The most serious insect pests are sugarcane borers, Pyrilla, and whitefly. In some areas mealy bug, black bug and army worm are also causing damage.
+<p>Isect pests play an important role in reducing the sugarcane yield. The most serious insect pests are sugarcane borers, Pyrilla, and whitefly. In some areas mealy bug, black bug and army worm are also causing damage.
 
 In Pakistan exact estimates of yield losses due to insect attack are lacking but it has been reported that top borer, stem borer, gurdaspur borer and Pyrilla cause a reduction in yield from 15-20, 10-20 and 30-35 percent , respectively. In some cases as high as 80-85 percent reduction in crop yield due to insect attack has been reported
 <br>
@@ -92,5 +141,16 @@ Harvesting is done when the crop has fully matured and ripened. Early varieties 
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
   <span class="screen-reader-text"></span>
 </a>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
 </body>
 </html>
